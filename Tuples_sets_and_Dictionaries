@@ -1,0 +1,53 @@
+'''Problem 1
+Another measure of average
+Mode is defined as the value that appears most often in a set of data values. Mode corresponds to the most frequent value.
+You are given a list of numbers and you need to calculate the mode of this list.'''
+
+SOLUTION:
+# A list containing average daily temperature over 10 days
+temperatures = [34, 40, 29, 33, 42, 40, 39, 34, 34,33 ]
+# Step 1 : Find the unique set of values. Store this in a list
+unique_temperatures = set(temperatures)
+ut = list(unique_temperatures)
+# Print the unique temperature list
+ut
+
+# Step 2 : Create an empty dictionary which will contain the unique temperatures as keys and their counts in the original temperatures list as values
+temp_dict = {}
+
+# Set the values for each key separately
+# First key
+temp_dict = {ut[0]:temperatures.count(ut[0])}
+
+
+# Second key
+temp_dict.update({ut[1]:temperatures.count(ut[1])})
+
+
+# Third key
+temp_dict.update({ut[2]:temperatures.count(ut[2])})
+
+
+# Fourth key
+
+temp_dict.update({ut[3]:temperatures.count(ut[3])})
+
+# Fifth key
+temp_dict.update({ut[4]:temperatures.count(ut[4])})
+
+
+# Sixth key
+temp_dict.update({ut[5]:temperatures.count(ut[5])})
+temp_dict
+
+# Step 3: Store the dictionary values in a list
+temp_dict_frequencies = list(temp_dict.values())
+
+# Print the list of dictionary values
+print(temp_dict_frequencies)
+# Find the index of the most frequent temperature value
+max_count = max(temp_dict_frequencies)
+most_frequent_temp_index = temp_dict_frequencies.index(max_count)
+
+# Print the index
+print(most_frequent_temp_index)
