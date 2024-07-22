@@ -34,7 +34,7 @@ func_evaluated_at_1 = 1**2 + 3*1 -4
 func_evaluated_at_1
 
 #Return the boolean for each value of x to find out whether that value is a root of  f(x)
-SOLUTION:
+#SOLUTION:
 # Check whether 2 is a root of f(x)
 func_evaluated_at_2 == 0
 # Check whether -1 is a root of f(x)
